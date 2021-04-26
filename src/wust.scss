@@ -1,0 +1,52 @@
+/**
+ * PWR theme for reveal.js. Based on the 'White' theme
+ *
+ * By Kemal Erdem, https://erdem.pl
+ */
+
+// Default mixins and settings -----------------
+@import "./mixins";
+@import "./settings";
+// ---------------------------------------------
+
+// Override theme settings (see ../settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 42px;
+$mainFont: Calibri, sans-serif;
+$headingFont: Calibri, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #9d2f1e;
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: lighten($linkColor, 25%);
+$altBackgroundColor: #d1d1d1;
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1em;
+
+$mainLogoPath: "wust.png";
+$wideLogoPath: "wust-logo-pwr-szare-ang-poziom-bez-tla.png";
+
+section.has-dark-background {
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+  }
+}
+
+// Theme template ------------------------------
+@import "./theme";
+// ---------------------------------------------
