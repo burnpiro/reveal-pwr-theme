@@ -42,13 +42,15 @@
 		background-color: $linkColor;
 		position: absolute;
 		width: 5%;
+		min-width: 75px;
+		min-height: 75px;
 		height: 100%;
 	}
 	&:after {
 		background-image: url($wideLogoPath);
 		background-size: 30%;
 		background-repeat: no-repeat;
-		background-position: center right 12%;
+		background-position: center right 105px;
 		content: '';
 		display: block;
 		background-color: $altBackgroundColor;
@@ -57,6 +59,8 @@
 		right: 0;
 		width: 89vw;
 		height: 8vw;
+		min-height: 75px;
+		max-width: calc(100% - 85px);
 	}
 
 	&.main-slide {
@@ -92,6 +96,10 @@
 			background-size: 16%;
 			width: 94vw;
 			height: 5vw;
+
+			@include screen-sm {
+				background-size: 30%;
+			}
 		}
 	}
 }
@@ -381,26 +389,50 @@
 
 .reveal.main-slide .slide-number {
 	left: calc(5% - 32px);
+
+	@include screen-sm {
+		left: 16px;
+	}
 }
 
 .reveal.full-width-slide .slide-number {
 	left: calc(5% - 32px);
+
+	@include screen-sm {
+		left: 16px;
+	}
 }
 
 .reveal .slide-menu-button {
 	left: calc(5% + 16px) !important;
+
+	@include screen-sm {
+		left: calc(75px + 32px) !important;
+	}
 }
 
 .reveal.main-slide .slide-menu-button {
 	left: calc(10% + 16px) !important;
+
+	@include screen-sm {
+		left: calc(75px + 32px) !important;
+	}
 }
 
 .reveal.full-width-slide .slide-menu-button {
 	left: calc(12% + 16px) !important;
+
+	@include screen-sm {
+		left: calc(75px + 32px) !important;
+	}
 }
 
 .reveal.full-width-compressed-slide .slide-menu-button {
 	left: calc(7% + 16px) !important;
+
+	@include screen-sm {
+		left: calc(75px + 32px) !important;
+	}
 }
 
 /*********************************************
