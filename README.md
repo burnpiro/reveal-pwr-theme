@@ -8,7 +8,7 @@ No external dependencies.
 
 ## Installation
 
-Copy `dist/*.png` and `dist/*-theme.css` into `dist/theme/*`:
+Copy `dist/*.svg` and `dist/*-theme.css` into `dist/theme/*`:
 
 ```html
 [...]
