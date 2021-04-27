@@ -380,27 +380,30 @@
 
 .reveal .slide-number {
 	font-size: 18px;
-	left: 16px;
+	transform: translate(-50%, 0);
+	left: 2.5vw;
 	bottom: 24px;
 	right: unset;
 	background-color: unset;
 	font-weight: bold;
+
+	@include screen-sm {
+		left: 7vw;
+		font-size: 14px;
+	}
+
+	@include screen-md {
+		left: 5vw;
+		font-size: 16px;
+	}
 }
 
 .reveal.main-slide .slide-number {
-	left: calc(5% - 32px);
-
-	@include screen-sm {
-		left: 16px;
-	}
+	left: 5vw;
 }
 
 .reveal.full-width-slide .slide-number {
-	left: calc(5% - 32px);
-
-	@include screen-sm {
-		left: 16px;
-	}
+	left: 5vw;
 }
 
 .reveal .slide-menu-button {
