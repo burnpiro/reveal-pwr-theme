@@ -1,7 +1,7 @@
-import "./logo-PWr-pion-bez-tla-207x300.png";
-import "./logo_pwr.png";
-import "./wust.png";
-import "./wust-logo-pwr-szare-ang-poziom-bez-tla.png";
+import "./pwr-high.svg";
+import "./pwr-wide.svg";
+import "./wust-high.svg";
+import "./wust-wide.svg";
 
 const PWRTheme = () => {
   function setSlideClass(currentClassList, container) {
