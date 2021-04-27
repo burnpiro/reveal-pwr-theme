@@ -1,6 +1,6 @@
 {
   "name": "reveal-pwr-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PWR theme for revealJS",
   "main": "index.js",
   "scripts": {
